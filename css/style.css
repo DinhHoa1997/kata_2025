@@ -2160,18 +2160,51 @@ border-radius: 5px;
 .whyus-box
 {
   padding: 0px 30px;
+  width: calc(100% -  60px);
 }
 .whyus-item
 {
   display: flex;
   width: 100%;
+  padding-bottom: 30px;
+  position: relative;
+}
+.whyus-item::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border: 1px dashed #B8B8B8;
+  left: 19px;
+  top: 0px;
+  transform: translate(0%, 0px);
+}
+.whyus-item:nth-last-child(1)::before{
+  display: none;
 }
 .whyus-number{
   position: relative;
 }
 .whyus-number span{
-  font-size: 40px;
-  color: #FFF;
-  position: absolute;
-  top: 10px;
+ font-size: 30px;
+    color: #FFF;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    line-height: 1;
+    left: 50%;
+    transform: translate(-15px, 0%);
+}
+.whyus-number {
+    width: 50px;
+    position: relative;
+    z-index: 2;
+}
+.whyus-number img{
+
+  
+}
+.whyus-box
+{
+  position: relative;;
 }
